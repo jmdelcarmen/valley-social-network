@@ -1,0 +1,11 @@
+{
+  "name": "ValleyChat",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.6",
+    "nodemon": "^1.11.0"
+  }
+}

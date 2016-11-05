@@ -1,0 +1,29 @@
+<html ng-app="ValleyChat">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="app/css/main.css">
+  </head>
+
+  <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+    <div class="container">
+      <div>
+        <input type="text" ng-model="login.email">
+        <input type="password" ng-model="login.password">
+        <button ng-click="logUserIn()">Login</button> <a ui-sref="signUp">Create an account</a>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <div ui-view></div>
+
+
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/signup/signup-controller.js"></script>
+  <script src="app/navigation/navigation-controller.js"></script>
+
+</html>
