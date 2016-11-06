@@ -1,5 +1,5 @@
 (function () {
-  angular.module('ValleyChat', ["ui.router"])
+  angular.module('ValleyChat', ["ui.router", "ngFileUpload"])
       .config(function ($stateProvider) {
 
       $stateProvider
@@ -7,6 +7,12 @@
         url: "/signup",
         templateUrl: 'app/signup/signup.html',
         controller: "SignUpController"
+        })
+
+        .state('editProfile', {
+          url: "/edit-profile",
+          templateUrl: "app/profile/edit-profile-view.html",
+          controller: "EditProfileController"
         })
       })
 }());
