@@ -1,3 +1,4 @@
-# valley-social-network
+## Valley Social Network
 
-A social network for the Rio Grande Valley
++ A social network for the Rio Grande Valley
++ MEAN Stack application
